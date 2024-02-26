@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(245, 245, 245);
+}
+.main {
+  width: 100vw;
+  padding: 80px 20px;
+}
+.title {
+  color: rgb(0, 0, 0);
+  font-family: "Inter", sans-serif;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 33px;
+}
+.main__list {
+  border-radius: 16px;
+  box-shadow: 0px 8px 35px 0px rgba(0, 0, 0, 0.16);
+  background: rgb(255, 255, 255);
+  padding: 24px 0 0;
+  max-width: 594px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.list {
+  padding: 0 24px;
+}
+.container {
+  max-width: 546px;
+  margin: 0 auto;
+}
+.main__up {
+  border-bottom: rgb(222, 226, 230) solid 1px;
+  padding: 0 24px;
+}
+.form {
+  display: flex;
+  gap: 24px;
+}
+input::placeholder {
+  color: rgb(84, 89, 94);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+input {
+  box-sizing: border-box;
+  border: 1px solid rgb(206, 212, 218);
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  max-width: 356px;
+  height: 38px;
+  width: 100%;
+  padding-left: 13px;
+}
+.btn {
+  padding: 10px 16px;
+  background-color: #272829;
+  color: rgb(255, 255, 255);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 166px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 18px;
+}
+.btn:hover {
+  cursor: pointer;
+  transition: 1s;
+  opacity: 0.6;
+}
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(171, 181, 190);
+  border-radius: 2px;
+}
+input[type="checkbox"] + .check__box:hover {
+  cursor: pointer;
+}
+.content {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.text {
+  color: rgb(84, 89, 94);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 24px;
+}
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+.checkbox:checked + .check__box {
+  border-radius: 2px;
+  background: rgb(119, 73, 248);
+  background-image: url(./check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.check__box {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgb(171, 181, 190);
+  border-radius: 2px;
+  background: rgb(255, 255, 255);
+}
+.right {
+  display: flex;
+  gap: 16px;
+}
+.apply, .recycle, .delete {
+  border: none;
+  background-color: white;
+  width: 16px;
+  height: 21px;
+}
+.edit__text {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.pensil:hover {
+  cursor: pointer;
+}
+.recycle:hover {
+  cursor: pointer;
+}
+.btns {
+  background-color: rgb(245, 245, 245);
+  margin-top: 24px;
+  padding: 0 24px;
+}
+.container_btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn_grey {
+  background-color: rgb(108, 117, 125);
+  display: inline-block;
+  min-width: 220px;
+  margin-top: 24px;
+}
+.btn_red {
+  background-color: rgb(220, 53, 69);
+  margin-top: 24px;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.text_checked {
+  opacity: 0.5;
+  text-decoration-line: line-through;
+}
+.modal,
+.d-none {
+  display: none;
+}
+@media (max-width: 510px) {
+  .main {
+    padding: 30px 10px;
+  }
+  .title {
+    font-size: 28px;
+    /* padding-bottom: 13px; */
+  }
+  input::placeholder {
+    font-size: 13px;
+  }
+  .text {
+    font-size: 13px;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 13px;
+    width: max-content;
+  }
+  .btn_grey {
+    min-width: 150px;
+    margin-top: 24px;
+  }
+  input {
+    height: 28px;
+    width: 100%;
+    padding-left: 7px;
+  }
+}
+@media (max-width: 374px) {
+  .modal {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+  }
+  .main {
+    display: none;
+  }
+  .text__modul {
+    color: rgb(0, 0, 0);
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 33px;
+  }
+}
+@media (min-width: 373px) and (orientation: landscape) {
+  .modal {
+    display: none;
+  }
+}

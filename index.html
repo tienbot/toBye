@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bye</title>
+    <link rel="icon" type="image/x-icon" href="./style/pensil.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <h1 class="title">To bye</h1>
+      <div class="main__list">
+        <div class="main__up">
+          <div class="container">
+            <form action class="form">
+              <input
+                class="input"
+                type="text"
+                placeholder="Введите список покупок"
+              />
+              <input
+                type="submit"
+                class="btn btn_black"
+                value="Добавить"
+                required
+              />
+            </form>
+          </div>
+        </div>
+        <div class="list">
+          <div class="container containerList">
+            <!-- <div class="content">
+              <div class="left">
+                <label class="check option">
+                  <input type="checkbox" class="checkbox" />
+                  <span class="check__box"></span>
+                  <p class="text">
+                    Сделать удаление каждого элемента по крестику справа
+                  </p>
+                </label>
+              </div>
+              <div class="right">
+                <button class="apply">
+                  <img src="./style/pensil.webp" alt="check" />
+                </button>
+                <button class="recycle">
+                  <img src="./style/recycle.webp" alt="recycle" />
+                </button>
+              </div>
+            </div> -->
+            <!-- <div class="content">
+              <div class="left">
+                <label class="check option">
+                  <input type="checkbox" class="checkbox" checked />
+                  <span class="check__box"></span>
+                  <p class="text">Сделать добавление элементов в список</p>
+                </label>
+              </div>
+              <div class="right">
+                <button class="apply">
+                  <img src="./style/pensil.webp" alt="check" />
+                </button>
+                <button>
+                  <img class="recycle" src="./style/recycle.webp" alt="recycle" />
+                </button>
+              </div>
+            </div> -->
+          </div>
+        </div>
+        <div class="btns">
+          <div class="container container_btns">
+            <button class="btn btn_grey">Удалить выполненные</button>
+            <button class="btn btn_red">Удалить все</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal">
+      <p class="text__modul">Turn your gadget</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
